@@ -34,10 +34,8 @@ int main()
                 int i;
                 char c;
                 int size = fscanf(f, "%d %s %c", &i, data, &c);
-                // printf("%s\n", p);
                 if (c == 'R')
                     printf("Process Id: %d Name:%s\n", i, data);
-                // printf("\n\n");
             }
             dirent = readdir(dir);
         }

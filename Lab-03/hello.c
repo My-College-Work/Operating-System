@@ -14,13 +14,14 @@ int main()
     }
     if (pid == 0)
     {
-        printf("Hello \n");
+        printf("Hello from child\n");
         printf("my id = %d, parent_id = %d \n", getpid(), getppid());
     }
     else
     {
-        printf("Hello \n");
+        printf("Hello from parent\n");
         printf("my_id = %d, child_id=%d, parent_id=%d\n", getpid(), pid, getppid());
+        // sleep(1);
     }
     return 0;
 }
